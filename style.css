@@ -42,6 +42,7 @@ body{
 .container{
     margin: 50px;
     display: flex;
+    flex-wrap: wrap;
     gap: 50px;
     justify-content: center;
 }
@@ -51,10 +52,11 @@ body{
     margin-top: 10px;
 }
 .image {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     >img{
-    width: 100px;
-    height: 100px;
+    width: 40%;
+    height: 40%;
     }
 }
 #display-temp{
@@ -117,92 +119,4 @@ body{
     align-items: center;
     z-index: 999;
     display: none;
-}
-
-@media (max-width: 480px) {
-    /* Further adjustments for even smaller screens */
-    .weather-info{
-        width: 300px;
-        height: auto;
-        background-color: white;
-        padding: 10px;
-        display: none;
-    }
-    .hz-line{
-        background-color: black;
-        height: 1px;
-        margin-top: 5px;
-    }
-    .image {
-        text-align: center;
-        >img{
-        width: 150px;
-        height: 100px;
-        }
-    }
-    #icon{
-        font-size: 8px;
-    }
-    .v-line{
-        width: 0.5px;
-        height: 40px;
-        background-color: black;
-        margin-left: 10%;
-       
-    }
-    .para{
-        font-size: 8px;
-        display: block;
-    }
-    .extra-info{
-        display: flex;
-    }
-    #feels-like{
-        display: inline-block;
-    }
-    .fa-solid{
-        font-size: 8px;
-        color: rgba(77, 190, 213, 0.731);
-    }
-    #humidity{
-        display: inline-block;
-    }
-    .feels-like-info{
-        padding-left: 10%;
-        padding-top: 0px;
-    }
-    .humidity-info{
-        padding-left: 10%;
-        padding-top: 0px;
-    }
-    .fas{
-        font-size: 8px;
-        color: rgba(77, 190, 213, 0.731);
-    }
-    .weather-info-heading{
-        font-size: 16px;
-        color: rgba(77, 190, 213, 0.731);
-    }
-    #display-temp{
-        margin-top: 0;
-        font-size: 20px;
-    }
-    #display-city{
-        font-size: 10px;
-    }
-    #w-desc{
-        font-size: 10px;
-    }
-    #feels-like{
-        margin-top: 0;
-        font-size: 8px;
-    }
-    #humidity{
-        margin-top: 0;
-        font-size: 8px;
-    }
-    .weather-form-heading{
-        font-size: 16px;
-        color: rgba(77, 190, 213, 0.731);
-    }
 }
