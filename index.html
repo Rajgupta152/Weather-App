@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="weather-form text-center">
+            <h4 class="weather-form-heading">Weather App</h4>
+            <div class="hz-line"></div>
+            <div class="form-group">
+                <input type="text" id="city-name" placeholder="Enter a city name">
+            </div>
+            <button id="fetch-weather" class="btn btn-primary">Fetch weather</button>
+        </div>
+    
+        <div id="w-info" class="weather-info text-center" >
+            <h4 class="weather-info-heading">Weather App</h4>   
+            <div class="hz-line"></div>
+            <div class="image">
+                <img src="Image/4571485.png" alt="Sunny">
+            </div>
+            <h2 id="display-temp"></h2>
+            <div id="city">
+                <h6 id="w-desc"></h6>
+                <i id="icon"></i>
+                <h6 style="display: inline-block;" id="display-city"></h6>
+            </div>
+            <div class="hz-line"></div>
+            <div class="extra-info">
+                <div class="feels-like-info">
+                    <i class="fa-solid fa-temperature-half"></i>
+                    <h5 id="feels-like"></h5>
+                    <p class="para">feels like</p>
+                </div>
+                <div class="v-line"></div>
+                <div class="humidity-info">
+                    <i class="fas fa-tint"></i>
+                    <h5 id="humidity"></h5>
+                    <p class="para">humidity</p>
+                </div>
+            </div>
+
+        </div>
+        <div id="loader">
+            Loading...
+        </div>
+    </div>
+    <script src="app.js"></script>
+  <!-- <script src="weather.js"></script> -->
+</body>
+</html>
